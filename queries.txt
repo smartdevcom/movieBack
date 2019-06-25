@@ -1,0 +1,28 @@
+CREATE TABLE `movies` (
+`id` int(10) NOT NULL AUTO_INCREMENT,
+`name` varchar(200) NOT NULL,
+`summary` varchar(2000) NOT NULL,
+`duration` varchar(1000) NOT NULL,
+`photo` varchar(1000) NOT NULL,
+`purchaseprice` varchar(200) NOT NULL,
+`rentalprice` varchar(200) NOT NULL,
+`rating` varchar(200) NOT NULL,
+`director` varchar(200) NOT NULL,
+`cast` varchar(1000) NOT NULL,
+`genre` varchar(200) NOT NULL,
+`like_count` int(100) NOT NULL,
+`url` varchar(1000) NOT NULL,
+PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1
+
+INSERT INTO movies (id, NAME, summary, duration, photo, purchaseprice, rentalprice, rating, director,CAST, genre, like_count, url) VALUES
+(1, 'Aladdin',"Aladdin is a lovable street urchin who meets Princess Jasmine, the beautiful daughter of the sultan of Agrabah. While visiting her exotic palace, Aladdin stumbles upon a magic oil lamp that unleashes a powerful, wisecracking, larger-than-life genie.", '120 min', 'aladdin.jpg', '49','19', '7/10', 'Guy Ritchie','Naomi Scott, Nasim Pedrad','Fantasy-Fiction', 4,'https://www.youtube.com/watch?v=foyufD52aog&t=2s'),
+(2, 'Avengers', "Adrift in space with no food or water, Tony Stark sends a message to Pepper Potts as his oxygen supply starts to dwindle. Meanwhile, the remaining Avengers -- Thor, Black Widow, Captain America and Bruce Banner -- must figure out a way to bring back their vanquished allies for an epic showdown with Thanos -- the evil demigod who decimated the planet and the universe.",'100 min', 'avengers.jpg', '49','19','8/10' ,'The Russo Brothers','Chris Hemsworth, Chris Evans, Brie Larson','Sciene-Fiction',2,'https://www.youtube.com/watch?v=TcMBFSGVi1c'),
+(3, 'Baywatch',"When a dangerous crime wave hits the beach, the legendary Mitch Buchannon leads his elite squad of lifeguards on a mission to prove that you don't have to wear a badge to save the bay. Joined by a trio of hotshot recruits, including former Olympian Matt Brody, they ditch the surf and go deep under cover to take down a ruthless businesswoman whose devious plans threaten the future of the bay.", '100 min', 'baywatch.jpg', '39','19', '6/10' ,'Seth Gordon','Priyanka Chopra, Dwayne Johnson','Comedy',5,'https://www.youtube.com/watch?v=eyKOgnaf0BU'),
+(4, 'Death Wish', "Dr. Paul Kersey is a surgeon who often sees the consequences of the city's violence in the emergency room. When home intruders brutally attack his wife and young daughter, Kersey becomes obsessed with delivering vigilante justice to the perpetrators. As the anonymous slayings grab the media's attention, the public begins to wonder if the deadly avenger is a guardian angel -- or the Grim Reaper itself.",'120 min', 'deathwish.jpg', '39','19', '6.5/10', 'Eli Roth','Bruce Willis, Vincent','Thriller-action',0,'https://www.youtube.com/watch?v=HzILu6yyA20'),
+(5, 'Transformers',"Humans are at war with the Transformers, and Optimus Prime is gone. The key to saving the future lies buried in the secrets of the past and the hidden history of Transformers on Earth. Now, it's up to the unlikely alliance of inventor Cade Yeager, Bumblebee, an English lord and an Oxford professor to save the world.", '108 min', 'transformers.jpg', '49','19', '6/10', 'Michael Bay','Mark Wahlberg','Sciene-Fiction',2,'https://www.youtube.com/watch?v=6Vtf0MszgP8'),
+(6, 'Deadpool',"Wade Wilson (Ryan Reynolds) is a former Special Forces operative who now works as a mercenary. His world comes crashing down when evil scientist Ajax (Ed Skrein) tortures, disfigures and transforms him into Deadpool. The rogue experiment leaves Deadpool with accelerated healing powers and a twisted sense of humor. ", '110 min', 'deadpool.jpg', '39','19', '8/10', 'Tim Miller','Ryan Reynolds','Sciene-Fiction',5,'https://www.youtube.com/watch?v=ONHBaC-pfsk'),
+(7, 'Dr Strange',"Dr. Stephen Strange's (Benedict Cumberbatch) life changes after a car accident robs him of the use of his hands. When traditional medicine fails him, he looks for healing, and hope, in a mysterious enclave. He quickly learns that the enclave is at the front line of a battle against unseen dark forces bent on destroying reality. ", '111 min', 'drstrange.jpg', '39','19', '8/10','John','Benedict Cumberbatch','Sciene-Fiction',3,'https://www.youtube.com/watch?v=Lt-U_t2pUHI'),
+(8, 'Thor',"As the son of Odin (Anthony Hopkins), king of the Norse gods, Thor (Chris Hemsworth) will soon inherit the throne of Asgard from his aging father. However, on the day that he is to be crowned, Thor reacts with brutality when the gods' enemies, the Frost Giants, enter the palace in violation of their treaty. As punishment, Odin banishes Thor to Earth.",'130 min', 'thor.jpg', '39','19', '7/10' ,'Richard','Chris Hemsworth','Sciene-Fiction',3,'https://www.youtube.com/watch?v=JOddp-nlNvQ'),
+(9, 'Martian',"When astronauts blast off from the planet Mars, they leave behind Mark Watney (Matt Damon), presumed dead after a fierce storm. With only a meager amount of supplies, the stranded visitor must utilize his wits and spirit to find a way to survive on the hostile planet. ", '110 min', 'martian.jpg', '49','19', '8/10','Mitchell','Matt Daemon','Drama-Sciene-Fiction',5,'https://www.youtube.com/watch?v=ej3ioOneTy8'),
+(10, 'Ironman',"A billionaire industrialist and genius inventor, Tony Stark (Robert Downey Jr.), is conducting weapons tests overseas, but terrorists kidnap him to force him to build a devastating weapon. Instead, he builds an armored suit and upends his captors. Returning to America, Stark refines the suit and uses it to combat crime and terrorism.", '112 min', 'ironman.jpg', '29','19','8/10','Megan','Robert Downey.Jr','Sciene-Fiction',4,'https://www.youtube.com/watch?v=DIfgxIv5xmk')
